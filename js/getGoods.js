@@ -64,7 +64,7 @@ const getGoods = () => {
 	) {
 		renderGoods(JSON.parse(localStorage.getItem('goods')))
 	}
-	if (window.location.pathname !== '/goods.html') {
+	if (more) {
 		more.addEventListener('click', () => {
 			getData('ALL', undefined)
 		})
